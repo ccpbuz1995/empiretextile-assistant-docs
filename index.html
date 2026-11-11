@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMPIRETEXTILE Assistant — application documentation</title>
+<style>
+  :root { --fg:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --line:#e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#1c1c1e; --line:#38383a; }
+  }
+  :root[data-theme="dark"] { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#1c1c1e; --line:#38383a; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; border-top: 1px solid var(--line); padding-top: 16px; }
+  ul { padding-left: 20px; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: .95em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>EMPIRETEXTILE Assistant</h1>
+  <div class="meta">Version 1.0.0 · Self-developed application for internal use</div>
+
+  <h2>Purpose</h2>
+  <p>EMPIRETEXTILE Assistant is an internal tool used by EMPIRETEXTILE to manage its own product offers and stock on Allegro. It reads the company's own listings, prepares changes, and applies them only after a manual confirmation.</p>
+
+  <h2>What the application does</h2>
+  <ul>
+    <li>Reads the company's own offers, prices and stock levels.</li>
+    <li>Updates offer data (titles, descriptions, images, prices, quantities) after explicit approval.</li>
+    <li>Reads order status for the company's own shop, for reporting.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not operate on offers or accounts of other sellers.</li>
+    <li>It does not send messages to buyers automatically.</li>
+    <li>It does not store buyers' personal data beyond what is needed for order processing.</li>
+  </ul>
+
+  <h2>Access and security</h2>
+  <ul>
+    <li>Access uses OAuth 2.0 authorization of the company's Allegro account.</li>
+    <li>Credentials are stored on the company's own server and are not shared.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions about this application: write through the Allegro developer portal contact form for this app.</p>
+</main>
+</body>
+</html>
